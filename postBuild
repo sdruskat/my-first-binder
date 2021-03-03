@@ -1,4 +1,10 @@
 wget -q -O gapminder.csv http://bit.ly/2uh4s3g
+
 # Install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc
+
+# Install Java 11 JDK
+wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jdk_x64_linux_hotspot_11.0.10_9.tar.gz
+tar xzf OpenJDK11U-jdk_x64_linux_hotspot_11.0.10_9.tar.gz
+export PATH=$PWD/jdk-11.0.10+9/bin:$PATH
