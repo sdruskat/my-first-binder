@@ -1,1 +1,3 @@
 wget -q -O gapminder.csv http://bit.ly/2uh4s3g
+# Install Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
